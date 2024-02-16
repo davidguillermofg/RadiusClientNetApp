@@ -1,0 +1,12 @@
+C:\Users\ue0100067t\source\repos\RadiusClientNetApp\RadiusClientNetApp\obj\Debug\RadiusClientNetApp.csprojAssemblyReference.cache
+C:\Users\ue0100067t\source\repos\RadiusClientNetApp\RadiusClientNetApp\obj\Debug\RadiusClientNetApp.Properties.Resources.resources
+C:\Users\ue0100067t\source\repos\RadiusClientNetApp\RadiusClientNetApp\obj\Debug\RadiusClientNetApp.csproj.GenerateResource.cache
+C:\Users\ue0100067t\source\repos\RadiusClientNetApp\RadiusClientNetApp\obj\Debug\RadiusClientNetApp.csproj.CoreCompileInputs.cache
+C:\Users\ue0100067t\source\repos\RadiusClientNetApp\RadiusClientNetApp\bin\Debug\RadiusClientNetApp.exe.config
+C:\Users\ue0100067t\source\repos\RadiusClientNetApp\RadiusClientNetApp\bin\Debug\RadiusClientNetApp.exe
+C:\Users\ue0100067t\source\repos\RadiusClientNetApp\RadiusClientNetApp\bin\Debug\RadiusClientNetApp.pdb
+C:\Users\ue0100067t\source\repos\RadiusClientNetApp\RadiusClientNetApp\bin\Debug\Radius.dll
+C:\Users\ue0100067t\source\repos\RadiusClientNetApp\RadiusClientNetApp\obj\Debug\RadiusClientNetApp.csproj.CopyComplete
+C:\Users\ue0100067t\source\repos\RadiusClientNetApp\RadiusClientNetApp\obj\Debug\RadiusClientNetApp.exe
+C:\Users\ue0100067t\source\repos\RadiusClientNetApp\RadiusClientNetApp\obj\Debug\RadiusClientNetApp.pdb
+C:\Users\ue0100067t\source\repos\RadiusClientNetApp\RadiusClientNetApp\obj\Debug\RadiusClientNetApp.Form1.resources
