@@ -24,15 +24,23 @@ namespace RadiusClientNetApp
             string sharedKey = txtSharedKey.Text;
             string username = txtUsername.Text;
             string password = txtPassword.Text;
-            string attribute = txtAttribute.Text;
+            string vendorSpecificData1 = txtVendorSpecificData1.Text;
+            string vendorSpecificData2 = txtVendorSpecificData2.Text;
+            uint vendorId = Convert.ToUInt16(txtVendorId.Text);
             int timeout = Convert.ToInt16(txtTimeout.Text);
             uint port = Convert.ToUInt16(txtPort.Text);
             string output = "";
 
             RadiusClient rc = new RadiusClient(hostname, sharedKey, timeout, port);
             RadiusPacket authPacket = rc.Authenticate(username, password);
-            authPacket.SetAttribute(new VendorSpecificAttribute(10, 1, UTF8Encoding.UTF8.GetBytes(attribute)));
-            authPacket.SetAttribute(new VendorSpecificAttribute(10, 2, new[] { (byte)7 }));
+            if(vendorSpecificData1.Length>0)
+            {
+                authPacket.SetAttribute(new VendorSpecificAttribute(vendorId, 1, UTF8Encoding.UTF8.GetBytes(vendorSpecificData1)));
+            }
+            if (vendorSpecificData2.Length > 0)
+            {
+                authPacket.SetAttribute(new VendorSpecificAttribute(vendorId, 2, UTF8Encoding.UTF8.GetBytes(vendorSpecificData2)));
+            }
             RadiusPacket receivedPacket = await rc.SendAndReceivePacket(authPacket);
 
             if (receivedPacket == null)
@@ -66,6 +74,11 @@ namespace RadiusClientNetApp
             }
             output += " \n";
             txtOutput.Text = output;
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
